@@ -1,0 +1,6 @@
+- name: create container 
+  hosts: dockerhosts
+  tasks: 
+   - name: web Container
+     shell:
+      cmd: docker run -itd webimage  
