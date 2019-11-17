@@ -1,0 +1,11 @@
+---
+- hosts: all
+  vars_prompt:
+   - name: NGINX
+     prompt: "Enter The Package Name:" 
+  tasks:
+   - name: "install {{NGINX}} package"
+     package:
+        name: "{{NGINX}}" 
+        state: present
+        

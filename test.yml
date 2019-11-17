@@ -1,0 +1,11 @@
+---
+
+# tasks file for demo
+
+- hosts: all
+  tasks:
+   - name: install package
+     package:
+     name: wget
+     state: installed
+

@@ -1,0 +1,10 @@
+---
+- hosts: all
+  vars_files:
+   - var01.yml 
+  tasks:
+   - name: 1. Installing .....NGINX....
+     package:
+        name: "{{packname}}" 
+        state: present
+        

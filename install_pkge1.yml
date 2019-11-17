@@ -1,0 +1,10 @@
+---
+- hosts: all
+  vars: 
+   packname: build-essential 
+  tasks:
+   - name: 1. Installing WGET
+     package:
+        name: "{{packname}}" 
+        state: present
+        
